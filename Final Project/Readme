@@ -1,0 +1,7 @@
+Exploratory Data Analysis: Delhi Air Quality & Weather (2025)
+Overview
+
+This project presents an end-to-end Exploratory Data Analysis (EDA) of daily air quality and weather data for Delhi in 2025. The objective is to understand temporal patterns,
+seasonal drivers, and pollutant contributions to Air Quality Index (AQI) variation, and to identify factors associated with extreme pollution episodes.
+
+The project was completed as part of the Winter in Data Science (WiDS) workshop at IIT Bombay.
