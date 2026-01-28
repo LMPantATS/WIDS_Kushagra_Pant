@@ -1,16 +1,9 @@
-Exploratory Data Analysis (EDA) — WiDS Project Summary
+Exploratory Data Analysis — My WiDS Journey
 
-During the WiDS (Winter in Data Science) program, I developed a structured approach to Exploratory Data Analysis, progressing from basic univariate inspection to
-question-driven multivariate analysis.
+During the WiDS program, I finally got a proper grip on EDA instead of just throwing plots at the wall and hoping something sticks. I started simple: poking at single variables, checking distributions, hunting down missing values, and spotting weird data quality stuff early. One big lesson? Don't over-clean everything right away — I almost trashed a bunch of "outliers" in the first dataset before realizing some were actually interesting signals, like crazy high PM2.5 readings during Diwali week. That taught me to treat weird points as clues, not just noise to delete.
 
-In the early phase, I focused on understanding distributions, missing values, and data quality issues, learning to avoid common mistakes such as over-cleaning, plotting 
-without intent, and blindly trusting correlations. I learned to treat outliers as signals to investigate, not points to remove by default.
+As the weeks went on, we moved into bivariate stuff and really thinking about questions instead of blindly running corr() on everything. I got better at asking things like "Does this pollutant spike more in winter because of stubble burning?" or "How do extreme AQI days look different from regular bad days?" rather than just "what correlates with what." Seasonality became obvious once I conditioned on months, and I started seeing how subgroups (different cities, different times of day) behave totally differently.
 
-As the sessions progressed, the emphasis shifted to bivariate and conditional analysis, where I learned to ask meaningful pairwise questions instead of correlating variables 
-mechanically. This included studying seasonality, contextual dependencies, and subgroup behavior.
+The final AQI project was where it all clicked. I dug into how pollutants trade off — like how PM2.5 dominates in winter while ozone takes over in summer — and compared "really awful" days (AQI > 300) to just "meh, it's bad but normal" ones. I didn't jump straight to a model; the point was to pull out insights that actually make sense and spark better questions for when we do modeling later. One thing that surprised me: how much the AQI formula hides the fact that different pollutants drive the problem depending on the season/weather.
 
-The final AQI project applied these principles to real air-quality data. I analyzed seasonal pollutant behavior, compared extreme vs normal AQI days, and examined howdifferent
-pollutants dominate AQI under different conditions. Rather than building a predictive model, the goal was to extract interpretable insights and generate better,testable 
-questions for downstream modeling.
-
-Overall, this project reflects a transition from plotting data to thinking analytically with data, using EDA as a tool for reasoning rather than decoration.
+Looking back, this whole thing shifted me from "let's make pretty charts" to actually reasoning with the data. EDA isn't just decoration anymore — it's how you figure out what's worth modeling in the first place. Still a long way to go, but I feel like I leveled up a lot.
