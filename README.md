@@ -2,9 +2,9 @@ Exploratory Data Analysis (EDA) — WiDS Project
 
 During WiDS, I finally started doing EDA the right way instead of just making random plots and calling it a day.
 
-In the beginning, EDA for me mostly meant poking at single variables, checking distributions, hunting down missing values, and spotting weird data quirks. Pretty quick, I realized how easy it is to mess this up—like nuking half the dataset just because something looks “off” or spamming correlation matrices and pretending that means insight. One big shift was learning to not blindly trust correlations and to stop over-cleaning data just to make things look nice.
+In the beginning, EDA for me mostly meant poking at single variables, checking distributions, hunting down missing values, and spotting weird data quirks. One big shift was learning to not blindly trust correlations and to stop over-cleaning data just to make things look nice.
 
-Outliers were a huge mindset change. My first instinct was to delete them because they were annoying. I almost removed a bunch of super high PM2.5 values before it clicked that these weren’t errors at all—they probably lined up with Diwali fireworks and stubble burning season. That honestly made me realize outliers can actually be the most interesting part of the data instead of something you sweep under the rug.
+Outliers were a huge mindset change. My first instinct was to delete them because they were annoying. I almost removed a bunch of super high PM2.5 values before it clicked that these weren’t errors at all they probably lined up with Diwali fireworks and stubble burning season. That honestly made me realize outliers can actually be the most interesting part of the data instead of something you sweep under the rug.
 
 As things went on, I stopped doing EDA as a checklist and started actually asking real questions. Instead of just plotting everything against everything, I began looking at pairs that made sense and conditioning on context. Once I grouped things by month or season, the seasonality jumped out pretty clearly, and I could see how different pollutants kind of take turns being the main culprit behind AQI depending on the time of year.
 
